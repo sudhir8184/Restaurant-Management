@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<link href="App_Theams/MainStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="TopContentPlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <table class="MasterPageTableStyle">
+            <tr>
+                <td class="HeaderStyle" colspan="2" style="text-align: center">FoodStop.Com</td>
+            </tr>
+            <tr>
+                <td class="LeftStyle">
+                    <asp:TreeView ID="TreeView1" runat="server">
+                        <Nodes>
+                            <asp:TreeNode Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="Listing" Value="Listing" NavigateUrl="~/Listing.aspx"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Login.aspx" Text="Login" Value="Login">
+                                <asp:TreeNode NavigateUrl="~/Registration.aspx" Text="Register" Value="Register"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="Make Reservation" Value="Make Reservation" NavigateUrl="~/Reservation.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="Survey" Value="Survey" NavigateUrl="~/Survey.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="Careers" Value="Careers" NavigateUrl="~/Career.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="FAQ /Help" Value="FAQ /Help" NavigateUrl="~/FAQ.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="Contact Us" Value="About Us" NavigateUrl="~/ContactUs.aspx"></asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                </td>
+                <td class="MainContentStyle">
+                    <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="BottomStyle" colspan="2"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

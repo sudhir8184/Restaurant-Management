@@ -1,0 +1,93 @@
+﻿body {
+    background: #BB7A46;
+    font-family: Footlight MT;
+}
+
+.HeaderStyle {
+    position:absolute;
+    top:10px;
+    height:135px;   
+    left: 10px;
+    right:10px;
+    background-color: aqua;
+    font-family: 'Footlight MT';
+    font-size: 75px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    vertical-align:20px;
+   
+}
+
+
+.ImageLogoStyle {
+     position:absolute;
+     text-align:right;
+     width:235px;
+     height:135px;
+     right: 1px;
+     background-color: aqua;
+}
+
+.LeftStyle {
+    position:absolute;
+    top:148px;
+    left:10px;
+    width:300px;
+    height:530px;
+    background-color: #a5d114;
+    font-family: 'Footlight MT';
+    font-size: x-large;
+}
+
+.MainContentStyle {
+    position:absolute;
+    top:148px;
+    left:303px;
+    right:10px;
+    height:530px;    
+    background-color: #29abdb;
+    font-family: 'Footlight MT';
+    font-size: large;
+    vertical-align: 25px;
+    margin-left: 10px;
+    overflow-y:scroll;
+}
+
+.BottomStyle {
+    position:absolute;
+    top:683px;
+    height:30px;   
+    left: 10px;
+    right:10px;
+    background-color: AppWorkspace;
+    font-family: 'Footlight MT';
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    background-color:red;
+    text-align: center;
+}
+
+.FacilityTableStyle {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: #130044;
+}
+
+.MasterPageTableStyle {
+    width: 100%;
+    height: 100%;
+}
+
+.MarqueeT {
+    font-family:'Bodoni MT Poster';
+    font-size:medium;
+    color:blue;
+}
+
+.Jobs ul li :hover{
+    color: red
+    Background aliceblue
+}
+
